@@ -5,10 +5,7 @@ import KillerPerk from "./killerPerkRoulette";
 export default function Killer() {
   return (
     <div>
-      <h1>Hello from Killer Roulette page</h1>
-
-      <button>Re-Roll Killer</button>
-      <button>Re-Roll Perks</button>
+      <h1>Killer Roulette</h1>
 
       <div className="killer-roulette">
         <KillerCharacter />
@@ -16,11 +13,11 @@ export default function Killer() {
       <div className="killer-perk-container">
         <div className="killer-perk-roulette">
           <div className="perk-container">
-            <KillerPerk /> PERK 1
+            <KillerPerk />
+            <KillerPerk />
+            <KillerPerk />
+            <KillerPerk />
           </div>
-          <div className="perk-container">PERK 2</div>
-          <div className="perk-container">PERK 3</div>
-          <div className="perk-container">PERK 4</div>
         </div>
       </div>
     </div>

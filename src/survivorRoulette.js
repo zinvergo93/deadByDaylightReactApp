@@ -14,7 +14,7 @@ export default class Survivor extends Component {
   render() {
     return (
       <div>
-        <h1>Hello from Survivor roulette page</h1>
+        <h1>Survivor Roulette</h1>
 
         <div className="survivor-roulette">
           <SurvivorCharacter />

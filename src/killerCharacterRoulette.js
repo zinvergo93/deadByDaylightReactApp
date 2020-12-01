@@ -6,6 +6,7 @@ export default class KillerCharacter extends Component {
     super(props);
     this.state = {
       killers: [],
+      randomKiller: [],
     };
   }
 
@@ -15,20 +16,34 @@ export default class KillerCharacter extends Component {
       .then((response) => {
         console.log("grabbing data", response.data);
         this.setState({
-          killers: this.state.killers.concat(response.data.all_killers),
+          killers: this.state.killers.concat(response.data),
         });
+        return this.state.killers;
       })
       .catch((error) => {
         console.log("get killer list error", error);
       });
+  };
 
-    // return (this.setState =
-    //   survivors: this.state.survivors[Math.floor(Math.random() * survivors.length)]);
+  randomKiller = () => {
+    const randKill = this.state.killers[
+      Math.floor(Math.random() * this.state.killers.length)
+    ];
+    console.log(randKill);
+    return this.setState({
+      randomKiller: randKill,
+    });
   };
   componentDidMount() {
     this.getKillers();
   }
   render() {
-    return <div>Random Killer Character</div>;
+    return (
+      <div>
+        <button onClick={this.randomKiller}>Roll Killer</button>
+        <h3>{this.state.randomKiller.name}</h3>
+        <a href={this.state.randomKiller.url}>See more...</a>
+      </div>
+    );
   }
 }

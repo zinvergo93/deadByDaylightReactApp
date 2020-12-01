@@ -1,27 +1,52 @@
 import React, { Component } from "react";
-import Survivor from "./survivor";
+import axios from "axios";
 
 export default class SurvivorCharacter extends Component {
   constructor(props) {
     super(props);
     this.state = {
       survivors: [],
+      randomSurvivor: [],
     };
   }
 
+  getSurvivors = () => {
+    axios
+      .get("http://localhost:5000/survivors")
+      .then((response) => {
+        console.log("grabbing data", response.data);
+        this.setState({
+          survivors: this.state.survivors.concat(response.data),
+        });
+        return this.state.survivors;
+      })
+      .catch((error) => {
+        console.log("get survivor list error", error);
+      });
+  };
+
   randomSurvivor = () => {
-    const randomSurv = this.state.survivors[
-      Math.floor(Math.random() * survivors.length)
+    const randSurv = this.state.survivors[
+      Math.floor(Math.random() * this.state.survivors.length)
     ];
-    return randomSurv;
+    console.log(randSurv);
+    return this.setState({
+      randomSurvivor: randSurv,
+    });
   };
 
   componentDidMount() {
-    fetch(`http://localhost:5000/survivors`)
-      .then((res) => res.json())
-      .then((data) => this.setState({ survivors: data }));
+    this.getSurvivors();
   }
+
   render() {
-    return <div>{this.randomSurvivor}</div>;
+    return (
+      <div>
+        <button onClick={this.randomSurvivor}>Roll Survivor</button>
+        <h3>{this.state.randomSurvivor.name}</h3>
+
+        <a href={this.state.randomSurvivor.url}>See more...</a>
+      </div>
+    );
   }
 }

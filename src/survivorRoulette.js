@@ -1,28 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
 import SurvivorCharacter from "./survivorCharacterRoulette";
-// import SurvivorPerk from "./survivorPerkRoulette";
+import SurvivorPerk from "./survivorPerkRoulette";
 
-export default function Survivor() {
-  return (
-    <div>
-      <h1>Hello from Survivor roulette page</h1>
+export default class Survivor extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      survivor: [],
+      survivorPerks: [],
+    };
+  }
 
-      <button>Re-Roll Survivor</button>
-      <button>Re-Roll Perks</button>
-      <div className="survivor-roulette">
-        <div>
-          Random Survivor rendered here
+  render() {
+    return (
+      <div>
+        <h1>Hello from Survivor roulette page</h1>
+
+        <div className="survivor-roulette">
           <SurvivorCharacter />
         </div>
-      </div>
-      <div className="survivor-perk-container">
-        <div className="survivor-perk-roulette">
-          <div className="perk-container">{/* <SurvivorPerk /> */}Perk 1</div>
-          <div className="perk-container">{/* <SurvivorPerk /> */}Perk 2</div>
-          <div className="perk-container">{/* <SurvivorPerk /> */}Perk 3</div>
-          <div className="perk-container">{/* <SurvivorPerk /> */}Perk 4</div>
+
+        <div className="survivor-perk-container">
+          <div className="survivor-perk-roulette">
+            <div className="perk-container">
+              <SurvivorPerk />
+              <SurvivorPerk />
+              <SurvivorPerk />
+              <SurvivorPerk />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

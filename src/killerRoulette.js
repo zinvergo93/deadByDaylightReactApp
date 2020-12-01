@@ -1,4 +1,6 @@
 import React from "react";
+import KillerCharacter from "./killerCharacterRoulette";
+import KillerPerk from "./killerPerkRoulette";
 
 export default function Killer() {
   return (
@@ -9,11 +11,13 @@ export default function Killer() {
       <button>Re-Roll Perks</button>
 
       <div className="killer-roulette">
-        <div>Random Killer rendered here</div>
+        <KillerCharacter />
       </div>
       <div className="killer-perk-container">
         <div className="killer-perk-roulette">
-          <div className="perk-container">PERK 1</div>
+          <div className="perk-container">
+            <KillerPerk /> PERK 1
+          </div>
           <div className="perk-container">PERK 2</div>
           <div className="perk-container">PERK 3</div>
           <div className="perk-container">PERK 4</div>

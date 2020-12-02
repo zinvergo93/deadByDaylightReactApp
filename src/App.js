@@ -18,7 +18,7 @@ export default class App extends Component {
       <div>
         <Router>
           <NavBar />
-          <audio controls>
+          <audio loop preload="auto" className="audio-controller">
             <source src="Dead by Daylight theme.mp3" type="audio/mpeg" />
           </audio>
           <Switch>

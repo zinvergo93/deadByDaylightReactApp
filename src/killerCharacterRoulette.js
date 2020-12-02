@@ -40,7 +40,9 @@ export default class KillerCharacter extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.randomKiller}>Roll Killer</button>
+        <button onClick={this.randomKiller} className="roulette-button">
+          Roll Killer
+        </button>
         <h3>{this.state.randomKiller.name}</h3>
         <a href={this.state.randomKiller.url}>See more...</a>
       </div>

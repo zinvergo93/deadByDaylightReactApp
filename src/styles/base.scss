@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+}
+
+.main-page {
+  background: url("../images/dbdmainpage.jpg") no-repeat center center;
+  background-size: cover;
+  margin: 0px;
+  height: auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-decoration: none;
+    color: #b6b4b4;
+    margin-bottom: 10px;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .main-image {
+    display: flex;
+    justify-content: center;
+    background: url("../images/survivorbackground.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    width: 80%;
+    margin: 20px;
+
+    .instructions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Maven Pro", sans-serif;
+      font-weight: 500;
+      font-size: 1.2em;
+      color: whitesmoke;
+      margin: 35px;
+      border-radius: 1px red;
+    }
+  }
+
+  .main-button {
+    margin: 50px;
+    height: 50px;
+    width: 40%;
+    font-size: 2em;
+  }
+}
+
+.survivor {
+  background: url("../images/survivorbackground2.jpeg") no-repeat center center;
+  background-size: cover;
+  margin: 0px;
+}
+
+.killer {
+  background: url("../images/killer-background.jpg") no-repeat center center;
+  background: cover;
+  margin: 0px;
+}

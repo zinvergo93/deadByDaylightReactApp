@@ -1,0 +1,72 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .survivor-roulette {
+    font-family: "Syne Mono", monospace;
+    font-weight: 700;
+    text-align: center;
+    width: 550px;
+    color: #b6b4b4;
+
+    .page-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .character-roulette {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .perk-roulette {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .perk-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .killer-roulette {
+    font-family: "Syne Mono", monospace;
+    font-weight: 700;
+    text-align: center;
+    width: 550px;
+    color: #b6b4b4;
+
+    .page-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .character-roulette {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .perk-roulette {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .perk-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

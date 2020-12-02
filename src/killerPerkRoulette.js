@@ -40,14 +40,14 @@ export default class KillerPerk extends Component {
   }
   render() {
     return (
-      <div>
-        <div>
-          <button onClick={this.randomKillerPerk}>Roll Perk</button>
+      <div className="perk-container">
+        <button onClick={this.randomKillerPerk} className="roulette-button">
+          Roll Perk
+        </button>
 
-          <h3>{this.state.randomPerk.name}</h3>
-          <h5>Teachable : {this.state.randomPerk.teachable}</h5>
-          <p>{this.state.randomPerk.description}</p>
-        </div>
+        <h3>{this.state.randomPerk.name}</h3>
+        <h5>Teachable : {this.state.randomPerk.teachable}</h5>
+        <p>{this.state.randomPerk.description}</p>
       </div>
     );
   }

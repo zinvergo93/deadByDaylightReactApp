@@ -41,8 +41,10 @@ export default class SurvivorCharacter extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.randomSurvivor}>Roll Survivor</button>
+      <div className="single-roulette">
+        <button onClick={this.randomSurvivor} className="roulette-button">
+          Roll Survivor
+        </button>
         <h3>{this.state.randomSurvivor.name}</h3>
 
         <a href={this.state.randomSurvivor.url}>See more...</a>

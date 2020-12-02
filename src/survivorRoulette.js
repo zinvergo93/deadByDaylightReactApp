@@ -13,20 +13,24 @@ export default class Survivor extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Survivor Roulette</h1>
+      <div className="survivor">
+        <div className="page-container">
+          <div className="survivor-roulette">
+            <div className="page-header">
+              <h1>Survivor Roulette</h1>
+            </div>
 
-        <div className="survivor-roulette">
-          <SurvivorCharacter />
-        </div>
+            <div className="character-roulette">
+              <SurvivorCharacter />
+            </div>
 
-        <div className="survivor-perk-container">
-          <div className="survivor-perk-roulette">
-            <div className="perk-container">
-              <SurvivorPerk />
-              <SurvivorPerk />
-              <SurvivorPerk />
-              <SurvivorPerk />
+            <div className="perk-roulette">
+              <div className="perk-container">
+                <SurvivorPerk />
+                <SurvivorPerk />
+                <SurvivorPerk />
+                <SurvivorPerk />
+              </div>
             </div>
           </div>
         </div>

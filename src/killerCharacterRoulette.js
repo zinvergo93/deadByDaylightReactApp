@@ -12,7 +12,7 @@ export default class KillerCharacter extends Component {
 
   getKillers = () => {
     axios
-      .get("http://localhost:5000/killers")
+      .get("https://zi-dbd-roulette-api.herokuapp.com/killers")
       .then((response) => {
         console.log("grabbing data", response.data);
         this.setState({

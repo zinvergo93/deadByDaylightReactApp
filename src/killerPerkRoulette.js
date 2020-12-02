@@ -12,7 +12,7 @@ export default class KillerPerk extends Component {
 
   getkillerPerks = () => {
     axios
-      .get("http://localhost:5000/killer-perks")
+      .get("https://zi-dbd-roulette-api.herokuapp.com/killer-perks")
       .then((response) => {
         console.log("grabbing killer perks", response.data);
         this.setState({

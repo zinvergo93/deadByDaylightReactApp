@@ -12,7 +12,7 @@ export default class SurvivorCharacter extends Component {
 
   getSurvivors = () => {
     axios
-      .get("http://localhost:5000/survivors")
+      .get("https://zi-dbd-roulette-api.herokuapp.com/survivors")
       .then((response) => {
         console.log("grabbing data", response.data);
         this.setState({

@@ -12,7 +12,7 @@ export default class SurvivorPerk extends Component {
 
   getSurvivorPerks = () => {
     axios
-      .get("http://localhost:5000/survivor-perks")
+      .get("https://zi-dbd-roulette-api.herokuapp.com/survivor-perks")
       .then((response) => {
         console.log("grabbing survivor perks", response.data);
         this.setState({

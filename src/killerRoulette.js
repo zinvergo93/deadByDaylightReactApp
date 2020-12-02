@@ -24,6 +24,12 @@ export default function Killer() {
           </div>
         </div>
       </div>
+      <div className="footer">
+        <p>
+          This is a fan-made page. All rights are reserved. Copyright &#169;
+          2016 Behaviour Interactive
+        </p>
+      </div>
     </div>
   );
 }

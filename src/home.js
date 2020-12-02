@@ -25,6 +25,12 @@ const Home = (props) => {
         <Link to="/survivor-roulette">Go to Survivor Roulette</Link>
         <Link to="/killer-roulette">Go to Killer Roulette</Link>
       </div>
+      <div className="footer">
+        <p>
+          This is a fan-made page. All rights are reserved. Copyright &#169;
+          2016 Behaviour Interactive
+        </p>
+      </div>
     </div>
   );
 };

@@ -47,7 +47,7 @@ export default class SurvivorPerk extends Component {
         </button>
 
         <h3>{this.state.randomPerk.name}</h3>
-        <h5>Teachable: {this.state.randomPerk.teachable}</h5>
+        <h5> {this.state.randomPerk.teachable}</h5>
         <p>{this.state.randomPerk.description}</p>
       </div>
     );

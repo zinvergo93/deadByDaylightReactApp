@@ -58,13 +58,19 @@ body {
 }
 
 .survivor {
-  background: url("../images/survivorbackground2.jpeg") no-repeat center center;
+  background: url("../images/survivorbackground2.jpeg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
+  height: auto;
   margin: 0px;
 }
 
 .killer {
-  background: url("../images/killer-background.jpg") no-repeat center center;
-  background: cover;
+  background: url("../images/killer-background.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: auto;
   margin: 0px;
 }

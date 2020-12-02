@@ -18,6 +18,7 @@ export default class App extends Component {
       <div>
         <Router>
           <NavBar />
+
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/survivor-roulette" component={Survivor} />

@@ -13,16 +13,12 @@ export default class App extends Component {
     this.state = {};
   }
 
-  audioPlayer = () => {
-    const playSong = document.getElementById("audio-player").play();
-    return playSong;
-  };
   render() {
     return (
       <div>
         <Router>
           <NavBar />
-          <div>{this.audioPlayer()}</div>
+
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/survivor-roulette" component={Survivor} />

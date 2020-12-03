@@ -22,12 +22,14 @@ export default class App extends Component {
           <ReactAudioPlayer
             src="Dead by Daylight theme.mp3"
             preload="auto"
+            volume="0.5"
             autoPlay
             loop
           />
           <ReactAudioPlayer
             src="Dead by Daylight theme.ogg"
             preload="auto"
+            volume="0.5"
             autoPlay
             loop
           />

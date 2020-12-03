@@ -22,7 +22,7 @@ export default class App extends Component {
       <div>
         <Router>
           <NavBar />
-          {this.audioPlayer()}
+          <div>{this.audioPlayer()}</div>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/survivor-roulette" component={Survivor} />

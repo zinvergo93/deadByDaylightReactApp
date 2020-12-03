@@ -10,15 +10,13 @@ import Home from "./home";
 export default class App extends Component {
   constructor() {
     super();
-    this.state = {
-      isLoading= false
-    };
+    this.state = {};
   }
-  
+
   audioPlayer = () => {
-    const playSong = document.getElementById('audio-player').play()
-      return playSong
-  }
+    const playSong = document.getElementById("audio-player").play();
+    return playSong;
+  };
   render() {
     return (
       <div>

@@ -20,8 +20,8 @@ export default class App extends Component {
         <Router>
           <NavBar />
           <ReactAudioPlayer
-            src="./public/Dead by Daylight theme.mp3"
-            src="./public/Dead by Daylight theme.ogg"
+            src="../public/Dead by Daylight theme.mp3"
+            src="../public/Dead by Daylight theme.ogg"
             autoPlay="true"
             loop="true"
           />

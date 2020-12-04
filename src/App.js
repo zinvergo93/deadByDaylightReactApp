@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ReactAudioPlayer from "react-audio-player";
 
 import "./styles/main.scss";
 import Survivor from "./survivorRoulette";
@@ -8,10 +7,16 @@ import Killer from "./killerRoulette";
 import NavBar from "./navbar";
 import Home from "./home";
 
+import ReactAudioPlayer from "react-audio-player";
+
 export default class App extends Component {
   constructor() {
     super();
-    this.state = {};
+
+    this.state = {
+      play: true,
+      pause: false,
+    };
   }
 
   render() {
@@ -20,17 +25,15 @@ export default class App extends Component {
         <Router>
           <NavBar />
           <ReactAudioPlayer
+            id="audio-player"
             src="Dead by Daylight theme.mp3"
             preload="auto"
-            volume="0.5"
-            autoPlay
             loop
           />
           <ReactAudioPlayer
+            id="audio-player"
             src="Dead by Daylight theme.ogg"
             preload="auto"
-            volume="0.5"
-            autoPlay
             loop
           />
           <Switch>
